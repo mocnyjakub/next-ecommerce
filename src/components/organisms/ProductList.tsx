@@ -7,7 +7,7 @@ type ProductListProps = {
 
 export default function ProductList({ products }: ProductListProps) {
 	return (
-		<ul className="flex flex-wrap justify-center">
+		<ul className="flex flex-wrap justify-center" data-testid="products-list">
 			{products.map((product) => (
 				<ProductCard key={product.id} product={product} />
 			))}
